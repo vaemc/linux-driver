@@ -1,6 +1,6 @@
 
 # 方式1
 
-insmod RTL8723DU.ko
+insmod 8723du.ko
 
 

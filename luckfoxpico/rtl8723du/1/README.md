@@ -1,5 +1,5 @@
 
-# 方式1
+# 使用方法
 
 
 ## 设备树
@@ -41,11 +41,4 @@ udhcpc -i wlan0
 ifconfig wlan0 192.168.5.119 netmask 255.255.255.0
 route add default gw 192.168.5.1
 ```
-
-# 方式2
-
-1. 将1文件夹下的lib所有文件复制到linux系统下的/lib,
-2. 执行modprobe 8723du
-3. 执行reboot
-
 

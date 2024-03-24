@@ -41,9 +41,5 @@ wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf -Dwext
 udhcpc -i wlan0
 ```
 
-## 静态IP
-```
-ifconfig wlan0 192.168.5.119 netmask 255.255.255.0
-route add default gw 192.168.5.1
-```
+
 

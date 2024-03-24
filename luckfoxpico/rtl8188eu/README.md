@@ -8,6 +8,11 @@
 &gmac {
 	status = "okay";
 };
+
+&usbdrd_dwc3 {
+    status = "okay";
+    dr_mode = "host";
+};
 ```
 
 ## SDK全局配置支持WiFi

@@ -13,4 +13,3 @@ wpa_supplicant -D nl80211 -i wlan0 -c /etc/wpa_supplicant.conf &
 ### 动态IP
 ```
 udhcpc -i wlan0
-

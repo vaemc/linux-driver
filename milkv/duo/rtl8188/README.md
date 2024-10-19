@@ -1,7 +1,6 @@
 ## 加载驱动
 
-insmod 8188fu.ko
-
+insmod 8188ftv.ko
 
 ## 开启网卡
 ```

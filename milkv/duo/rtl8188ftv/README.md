@@ -8,7 +8,6 @@ reboot
 
 ## 加载驱动
 ```
-
 insmod 8188ftv.ko
 ```
 

@@ -7,14 +7,18 @@ reboot
 ```
 
 ## 加载驱动
-
 ```
-insmod 8723du.ko
+insmod 8188eus.ko
 ```
 
-## 开启网卡
+## 启用网卡
 ```
 ifconfig wlan0 up
+```
+
+## 连接wifi
+到wpa_supplicant.conf编辑wifi账号和密码，然后执行(只能连接2.4 GHz wifi)
+```
 wpa_supplicant -D nl80211 -i wlan0 -c /etc/wpa_supplicant.conf &
 ```
 
@@ -29,6 +33,7 @@ udhcpc -i wlan0
 ```
 touch wifi.sh
 ```
+
 内容
 ```
 #!/bin/bash

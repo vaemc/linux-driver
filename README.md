@@ -1,8 +1,24 @@
 # 使用方法
+将milkv duo的usb改成usb-host模式
+```
+ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
+sync
+reboot
+```
 
-## 开启网卡
+## 加载驱动
+```
+insmod 8188eus.ko
+```
+
+## 启用网卡
 ```
 ifconfig wlan0 up
+```
+
+## 连接wifi
+到wpa_supplicant.conf编辑wifi账号和密码，然后执行(只能连接2.4 GHz wifi)
+```
 wpa_supplicant -D nl80211 -i wlan0 -c /etc/wpa_supplicant.conf &
 ```
 
@@ -11,13 +27,6 @@ wpa_supplicant -D nl80211 -i wlan0 -c /etc/wpa_supplicant.conf &
 ```
 udhcpc -i wlan0
 ```
-
-## 静态IP
-```
-ifconfig wlan0 192.168.5.119 netmask 255.255.255.0
-route add default gw 192.168.5.1
-```
-
 
 # 联网脚本
 创建文件

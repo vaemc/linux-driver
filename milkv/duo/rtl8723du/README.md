@@ -25,8 +25,11 @@ udhcpc -i wlan0
 ```
 
 # 联网脚本
+创建文件
+```
 touch wifi.sh
-
+```
+内容
 ```
 #!/bin/bash
 

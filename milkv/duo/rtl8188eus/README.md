@@ -1,4 +1,13 @@
 支持RTL8188EUS、RTL8188ETV
+
+# 使用方法
+将milkv duo的usb改成usb-host模式
+```
+ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
+sync
+reboot
+```
+
 ## 加载驱动
 ```
 insmod 8188eus.ko

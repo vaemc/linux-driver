@@ -20,6 +20,7 @@ route add default gw 192.168.5.1
 
 
 # 联网脚本
+touch wifi.sh
 
 ```
 #!/bin/bash

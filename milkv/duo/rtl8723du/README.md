@@ -8,7 +8,7 @@ reboot
 
 ## 加载驱动
 ```
-insmod 8188eus.ko
+insmod 8723du.ko
 ```
 
 ## 启用网卡

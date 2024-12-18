@@ -1,5 +1,9 @@
 # 使用方法
 将milkv duo的usb改成usb-host模式
+
+<https://milkv.io/docs/duo/io-board/usb-ethernet-iob>
+
+<https://milkv.io/docs/duo/resources/spilvgl>
 ```
 ln -sf /mnt/system/usb-host.sh /mnt/system/usb.sh
 sync
